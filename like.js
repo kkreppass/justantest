@@ -16,4 +16,4 @@ fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json
     console.log(e.id);
     fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json","csrf-token":csrfToken(), "x-token":xToken},body:`{"query":"\\n    mutation LIKE($target: String, $targetSubject: String, $targetType: String, $groupId: ID) {\\n        like(target: $target, targetSubject: $targetSubject, targetType: $targetType, groupId: $groupId) {\\n            \\n    target\\n    targetSubject\\n    targetType\\n\\n        }\\n    }\\n","variables":{"target":"${e.id}","targetSubject":"project","targetType":"individual"}}`,method:"POST"});
 })});
-location.href="https://playentry.org/project/63fdb9b52b6fcf7269c80f67"
+location.href="https://playentry.org/project/608ba2b79748fd0019b7d029"
