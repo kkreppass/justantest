@@ -1,2 +1,4 @@
 # justantest
-commentbot.js, emailhack.js, entryReZERO.js, suyongso.js, test.js, test1.js 는 현재 사용할 수 없습니다.(곧 고칠거임!)
+## MakeUserLove.js
+유저를 잔상님 팬으로 만듭니다
+##entryREZERO.js
