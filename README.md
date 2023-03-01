@@ -1,4 +1,7 @@
 # justantest
+ js code for entry
+
+
 ## MakeUserLove.js
 안씀
 유저를 잔상님 팬으로 만듭니다
